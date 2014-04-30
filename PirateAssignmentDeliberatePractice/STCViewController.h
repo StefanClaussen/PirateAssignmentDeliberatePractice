@@ -11,6 +11,9 @@
 
 @interface STCViewController : UIViewController
 
+@property (strong, nonatomic)NSArray *tiles;
+@property (nonatomic)CGPoint currentPoint;
+
 @property (strong, nonatomic) IBOutlet UIImageView *backgroundImageView;
 @property (strong, nonatomic) IBOutlet UILabel *healthNumberLabel;
 @property (strong, nonatomic) IBOutlet UILabel *damageNumberLabel;

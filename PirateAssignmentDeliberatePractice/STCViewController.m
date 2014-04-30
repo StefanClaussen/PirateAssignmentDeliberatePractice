@@ -19,8 +19,19 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     STCFactory *factory = [[STCFactory alloc]init];
-    NSArray *tiles = [factory tiles];
-    NSLog(@"%@", tiles);
+    self.tiles = [factory tiles];
+    NSLog(@"%@", self.tiles);
+    
+    self.currentPoint = CGPointMake(0, 0);
+    NSLog(@"x is %f and y is %f", self.currentPoint.x, self.currentPoint.y);
+    
+    [self updateStoryTile];
+}
+
+- (void)updateStoryTile
+{
+    STCTile *tileModel = [[self.tiles objectAtIndex:self.currentPoint.x]objectAtIndex:self.currentPoint.y];
+    self.storyLabel.text = tileModel.story;
 }
 
 - (void)didReceiveMemoryWarning
