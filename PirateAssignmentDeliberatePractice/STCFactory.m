@@ -13,38 +13,50 @@
 - (NSArray *)tiles
 {
     STCTile *tile1 = [[STCTile alloc]init];
-    tile1.story = @"Story 1";
+    tile1.story = @"Start your adventure";
+    tile1.backgroundImage = [UIImage imageNamed:@"PirateStart.jpg"];
     STCTile *tile2 = [[STCTile alloc]init];
-    tile2.story = @"Story 2";
+    tile2.story = @"Pirate Blacksmith";
+    tile2.backgroundImage = [UIImage imageNamed:@"PirateBlacksmith.jpeg"];
     STCTile *tile3 = [[STCTile alloc]init];
-    tile3.story = @"Story 3";
+    tile3.story = @"Pirate Boss";
+    tile3.backgroundImage = [UIImage imageNamed:@"PirateBoss.jpeg"];
     
     NSMutableArray *column1 = [[NSMutableArray alloc]initWithObjects:tile1, tile2, tile3, nil];
     
     STCTile *tile4 = [[STCTile alloc]init];
-    tile4.story = @"Story 4";
+    tile4.story = @"Pirate friendly dock";
+    tile4.backgroundImage = [UIImage imageNamed:@"PirateFriendlyDock.jpg"];
     STCTile *tile5 = [[STCTile alloc]init];
-    tile5.story = @"Story 5";
+    tile5.story = @"Octopus attack";
+    tile5.backgroundImage = [UIImage imageNamed:@"PirateOctopusAttack.jpg"];
     STCTile *tile6 = [[STCTile alloc]init];
-    tile6.story = @"Story 6";
+    tile6.story = @"Pirate Parrot";
+    tile6.backgroundImage = [UIImage imageNamed:@"PirateParrot.jpg"];
     
     NSMutableArray *column2 = [[NSMutableArray alloc]initWithObjects:tile4, tile5, tile6, nil];
     
     STCTile *tile7 = [[STCTile alloc]init];
-    tile7.story = @"Story 7";
+    tile7.story = @"Pirate Plank";
+    tile7.backgroundImage = [UIImage imageNamed:@"PiratePlank.jpg"];
     STCTile *tile8 = [[STCTile alloc]init];
-    tile8.story = @"Story 8";
+    tile8.story = @"Pirate ship battle";
+    tile8.backgroundImage = [UIImage imageNamed:@"PirateShipBattle.jpeg"];
     STCTile *tile9 = [[STCTile alloc]init];
-    tile9.story = @"Story 9";
+    tile9.story = @"Pirate attack.";
+    tile9.backgroundImage = [UIImage imageNamed:@"PirateAttack.jpg"];
     
     NSMutableArray *column3 = [[NSMutableArray alloc]initWithObjects:tile7, tile8, tile9, nil];
     
     STCTile *tile10 = [[STCTile alloc]init];
-    tile10.story = @"Story 10";
+    tile10.story = @"Pirate Treasure";
+    tile10.backgroundImage = [UIImage imageNamed:@"PirateTreasure.jpeg"];
     STCTile *tile11 = [[STCTile alloc]init];
-    tile11.story = @"Story 11";
+    tile11.story = @"Pirate Treasurer";
+    tile11.backgroundImage = [UIImage imageNamed:@"PirateTreasurer2.jpeg"];
     STCTile *tile12 = [[STCTile alloc]init];
-    tile12.story = @"Story 12";
+    tile12.story = @"Pirate Weapons";
+    tile12.backgroundImage = [UIImage imageNamed:@"PirateWeapons.jpeg"];
     
     NSMutableArray *column4 = [[NSMutableArray alloc]initWithObjects:tile10, tile11, tile12, nil];
     

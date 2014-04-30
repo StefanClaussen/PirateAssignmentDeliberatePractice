@@ -25,14 +25,15 @@
     self.currentPoint = CGPointMake(0, 0);
     NSLog(@"x is %f and y is %f", self.currentPoint.x, self.currentPoint.y);
     
-    [self updateStoryTile];
+    [self updateTile];
     [self updateDirectionButtons];
 }
 
-- (void)updateStoryTile
+- (void)updateTile
 {
     STCTile *tileModel = [[self.tiles objectAtIndex:self.currentPoint.x]objectAtIndex:self.currentPoint.y];
     self.storyLabel.text = tileModel.story;
+    self.backgroundImageView.image = tileModel.backgroundImage;
 }
 
 - (void)didReceiveMemoryWarning
@@ -48,24 +49,28 @@
 {
     self.currentPoint = CGPointMake(self.currentPoint.x, self.currentPoint.y + 1);
     [self updateDirectionButtons];
+    [self updateTile];
 }
 
 - (IBAction)eastButtonPressed:(UIButton *)sender
 {
     self.currentPoint = CGPointMake(self.currentPoint.x + 1, self.currentPoint.y);
     [self updateDirectionButtons];
+    [self updateTile];
 }
 
 - (IBAction)southButtonPressed:(UIButton *)sender
 {
     self.currentPoint = CGPointMake(self.currentPoint.x, self.currentPoint.y - 1);
     [self updateDirectionButtons];
+    [self updateTile];
 }
 
 - (IBAction)westButtonPressed:(UIButton *)sender
 {
     self.currentPoint = CGPointMake(self.currentPoint.x - 1, self.currentPoint.y);
     [self updateDirectionButtons];
+    [self updateTile];
 }
 
 - (BOOL)tileExistsAtPoint:(CGPoint)point
