@@ -26,6 +26,7 @@
     NSLog(@"x is %f and y is %f", self.currentPoint.x, self.currentPoint.y);
     
     [self updateStoryTile];
+    [self updateDirectionButtons];
 }
 
 - (void)updateStoryTile
@@ -43,15 +44,51 @@
 - (IBAction)actionButtonPressed:(UIButton *)sender {
 }
 
-- (IBAction)northButtonPressed:(UIButton *)sender {
+- (IBAction)northButtonPressed:(UIButton *)sender
+{
+    self.currentPoint = CGPointMake(self.currentPoint.x, self.currentPoint.y + 1);
+    [self updateDirectionButtons];
 }
 
-- (IBAction)eastButtonPressed:(UIButton *)sender {
+- (IBAction)eastButtonPressed:(UIButton *)sender
+{
+    self.currentPoint = CGPointMake(self.currentPoint.x + 1, self.currentPoint.y);
+    [self updateDirectionButtons];
 }
 
-- (IBAction)southButtonPressed:(UIButton *)sender {
+- (IBAction)southButtonPressed:(UIButton *)sender
+{
+    self.currentPoint = CGPointMake(self.currentPoint.x, self.currentPoint.y - 1);
+    [self updateDirectionButtons];
 }
 
-- (IBAction)westButtonPressed:(UIButton *)sender {
+- (IBAction)westButtonPressed:(UIButton *)sender
+{
+    self.currentPoint = CGPointMake(self.currentPoint.x - 1, self.currentPoint.y);
+    [self updateDirectionButtons];
 }
+
+- (BOOL)tileExistsAtPoint:(CGPoint)point
+{
+    if (point.x >= 0 && point.y >= 0 && point.x < [self.tiles count] && point.y < [[self.tiles objectAtIndex:point.x]count])
+    {
+        return NO;
+    }
+    else
+    {
+        return YES;
+    }
+}
+
+- (void)updateDirectionButtons
+{
+    self.northButton.hidden = [self tileExistsAtPoint:CGPointMake(self.currentPoint.x, self.currentPoint.y + 1)];
+    self.eastButton.hidden = [self tileExistsAtPoint:CGPointMake(self.currentPoint.x + 1, self.currentPoint.y)];
+    self.southButton.hidden = [self tileExistsAtPoint:CGPointMake(self.currentPoint.x, self.currentPoint.y - 1)];
+    self.westButton.hidden = [self tileExistsAtPoint:CGPointMake(self.currentPoint.x - 1, self.currentPoint.y)];
+                               
+}
+
+
+
 @end
