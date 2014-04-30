@@ -107,6 +107,9 @@
                                         <state key="normal" title="Action">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="actionButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="lp6-qF-bsV"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.96350845029999999" green="0.21854568869999999" blue="0.13359564369999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -140,40 +143,66 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="northButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="NsD-ns-ipe"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wK0-T6-cDB">
                                 <rect key="frame" x="270" y="446" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.89836904250000005" blue="0.22300468400000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="N">
+                                <state key="normal" title="E">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="eastButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="gsE-tV-FzF"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fmo-3m-XVR">
                                 <rect key="frame" x="241" y="478" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.89836904250000005" blue="0.22300468400000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="N">
+                                <state key="normal" title="S">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="southButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="U5I-ta-23D"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NNr-lG-0DZ">
                                 <rect key="frame" x="209" y="447" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.89836904250000005" blue="0.22300468400000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="N">
+                                <state key="normal" title="W">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="westButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="LD4-eg-o4m"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="actionButton" destination="jm0-cR-cRu" id="8Nr-88-wPA"/>
+                        <outlet property="armorNameLabel" destination="inY-Mw-I6x" id="wAN-Tp-dvo"/>
+                        <outlet property="backgroundImageView" destination="yDw-KE-vHg" id="VGL-WJ-0i3"/>
+                        <outlet property="damageNumberLabel" destination="Fre-OK-pAQ" id="VyI-lm-pq7"/>
+                        <outlet property="eastButton" destination="wK0-T6-cDB" id="KS4-iR-jxi"/>
+                        <outlet property="healthNumberLabel" destination="DlU-bp-s1J" id="445-2g-HlV"/>
+                        <outlet property="northButton" destination="Ijr-rN-htF" id="D8w-xw-cyr"/>
+                        <outlet property="southButton" destination="fmo-3m-XVR" id="rlR-At-vSZ"/>
+                        <outlet property="storyLabel" destination="2vI-r8-DED" id="TIx-Mb-YX1"/>
+                        <outlet property="weaponLabel" destination="r1g-Am-muy" id="rYu-0h-FUy"/>
+                        <outlet property="weaponNameLabel" destination="r1g-Am-muy" id="oOR-6Q-O5V"/>
+                        <outlet property="westButton" destination="NNr-lG-0DZ" id="ffu-f0-wDh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
