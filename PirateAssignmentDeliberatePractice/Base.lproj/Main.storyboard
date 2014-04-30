@@ -199,7 +199,6 @@
                         <outlet property="northButton" destination="Ijr-rN-htF" id="D8w-xw-cyr"/>
                         <outlet property="southButton" destination="fmo-3m-XVR" id="rlR-At-vSZ"/>
                         <outlet property="storyLabel" destination="2vI-r8-DED" id="TIx-Mb-YX1"/>
-                        <outlet property="weaponLabel" destination="r1g-Am-muy" id="rYu-0h-FUy"/>
                         <outlet property="weaponNameLabel" destination="r1g-Am-muy" id="oOR-6Q-O5V"/>
                         <outlet property="westButton" destination="NNr-lG-0DZ" id="ffu-f0-wDh"/>
                     </connections>

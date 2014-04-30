@@ -18,6 +18,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    STCFactory *factory = [[STCFactory alloc]init];
+    NSArray *tiles = [factory tiles];
+    NSLog(@"%@", tiles);
 }
 
 - (void)didReceiveMemoryWarning
