@@ -21,6 +21,7 @@
 		F8B29F7419114A4E0048EBC5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8B29F5619114A4E0048EBC5 /* UIKit.framework */; };
 		F8B29F7C19114A4E0048EBC5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F8B29F7A19114A4E0048EBC5 /* InfoPlist.strings */; };
 		F8B29F7E19114A4E0048EBC5 /* PirateAssignmentDeliberatePracticeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B29F7D19114A4E0048EBC5 /* PirateAssignmentDeliberatePracticeTests.m */; };
+		F8B29F89191151750048EBC5 /* STCTile.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B29F88191151750048EBC5 /* STCTile.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		F8B29F7919114A4E0048EBC5 /* PirateAssignmentDeliberatePracticeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PirateAssignmentDeliberatePracticeTests-Info.plist"; sourceTree = "<group>"; };
 		F8B29F7B19114A4E0048EBC5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F8B29F7D19114A4E0048EBC5 /* PirateAssignmentDeliberatePracticeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PirateAssignmentDeliberatePracticeTests.m; sourceTree = "<group>"; };
+		F8B29F87191151750048EBC5 /* STCTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STCTile.h; sourceTree = "<group>"; };
+		F8B29F88191151750048EBC5 /* STCTile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STCTile.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,8 @@
 				F8B29F6419114A4E0048EBC5 /* Main.storyboard */,
 				F8B29F6719114A4E0048EBC5 /* STCViewController.h */,
 				F8B29F6819114A4E0048EBC5 /* STCViewController.m */,
+				F8B29F87191151750048EBC5 /* STCTile.h */,
+				F8B29F88191151750048EBC5 /* STCTile.m */,
 				F8B29F6A19114A4E0048EBC5 /* Images.xcassets */,
 				F8B29F5919114A4E0048EBC5 /* Supporting Files */,
 			);
@@ -250,6 +255,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8B29F89191151750048EBC5 /* STCTile.m in Sources */,
 				F8B29F5F19114A4E0048EBC5 /* main.m in Sources */,
 				F8B29F6919114A4E0048EBC5 /* STCViewController.m in Sources */,
 				F8B29F6319114A4E0048EBC5 /* STCAppDelegate.m in Sources */,
