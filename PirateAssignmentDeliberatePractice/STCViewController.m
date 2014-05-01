@@ -38,6 +38,7 @@
     STCTile *tileModel = [[self.tiles objectAtIndex:self.currentPoint.x]objectAtIndex:self.currentPoint.y];
     self.storyLabel.text = tileModel.story;
     self.backgroundImageView.image = tileModel.backgroundImage;
+    [self.actionButton setTitle:tileModel.actionButtonName forState:UIControlStateNormal];
     [self updateLabels];
 }
 
@@ -49,13 +50,36 @@
     self.armorNameLabel.text = self.character.armor.name;
 }
 
+- (void)updateCharacterStatsForHealth:(int)healthEffect ForWeapon:(STCWeapon *)weapon ForArmor:(STCArmor *)armor
+{
+    if (healthEffect != 0) {
+        self.character.characterHealth = self.character.characterHealth + healthEffect;
+    }
+    else if (weapon != 0){
+        self.character.damageLevel = self.character.characterHealth - self.character.weapon.damageNumber + weapon.damageNumber;
+        self.character.weapon = weapon;
+    }
+    else if (armor != 0){
+        self.character.characterHealth = self.character.characterHealth - self.character.armor.healthNumber + armor.healthNumber;
+        self.character.armor = armor;
+    }
+    else {
+        self.character.characterHealth = self.character.characterHealth + self.character.armor.healthNumber;
+        self.character.damageLevel = self.character.damageLevel + weapon.damageNumber;
+    }
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)actionButtonPressed:(UIButton *)sender {
+- (IBAction)actionButtonPressed:(UIButton *)sender
+{
+    STCTile *tile = [[self.tiles objectAtIndex:self.currentPoint.x]objectAtIndex:self.currentPoint.y];
+    [self updateCharacterStatsForHealth:tile.healthEffect ForWeapon:tile.weapon ForArmor:tile.armor];
+    [self updateTile];
 }
 
 - (IBAction)northButtonPressed:(UIButton *)sender
