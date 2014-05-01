@@ -22,6 +22,10 @@
     self.tiles = [factory tiles];
     NSLog(@"%@", self.tiles);
     
+    self.character = [factory character];
+    NSLog(@"%@", self.character);
+    
+    
     self.currentPoint = CGPointMake(0, 0);
     NSLog(@"x is %f and y is %f", self.currentPoint.x, self.currentPoint.y);
     
@@ -34,6 +38,15 @@
     STCTile *tileModel = [[self.tiles objectAtIndex:self.currentPoint.x]objectAtIndex:self.currentPoint.y];
     self.storyLabel.text = tileModel.story;
     self.backgroundImageView.image = tileModel.backgroundImage;
+    [self updateLabels];
+}
+
+- (void)updateLabels
+{
+    self.healthNumberLabel.text =  [NSString stringWithFormat:@"%i", self.character.characterHealth];
+    self.damageNumberLabel.text = [NSString stringWithFormat:@"%i", self.character.damageLevel];
+    self.weaponNameLabel.text = self.character.weapon.name;
+    self.armorNameLabel.text = self.character.armor.name;
 }
 
 - (void)didReceiveMemoryWarning
@@ -91,7 +104,6 @@
     self.eastButton.hidden = [self tileExistsAtPoint:CGPointMake(self.currentPoint.x + 1, self.currentPoint.y)];
     self.southButton.hidden = [self tileExistsAtPoint:CGPointMake(self.currentPoint.x, self.currentPoint.y - 1)];
     self.westButton.hidden = [self tileExistsAtPoint:CGPointMake(self.currentPoint.x - 1, self.currentPoint.y)];
-                               
 }
 
 

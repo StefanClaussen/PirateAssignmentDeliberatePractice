@@ -8,9 +8,12 @@
 
 #import <Foundation/Foundation.h>
 #import "STCTile.h"
+#import "STCCharacter.h"
 
 @interface STCFactory : NSObject
 
 - (NSArray *)tiles;
+
+- (STCCharacter *)character;
 
 @end

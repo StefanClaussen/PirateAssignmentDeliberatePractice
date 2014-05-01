@@ -11,7 +11,8 @@
 
 @interface STCViewController : UIViewController
 
-@property (strong, nonatomic)NSArray *tiles;
+@property (strong, nonatomic) NSArray *tiles;
+@property (strong, nonatomic) STCCharacter *character;
 @property (nonatomic)CGPoint currentPoint;
 
 @property (strong, nonatomic) IBOutlet UIImageView *backgroundImageView;

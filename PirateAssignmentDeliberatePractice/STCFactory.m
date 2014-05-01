@@ -65,4 +65,22 @@
     return tiles;
 }
 
+- (STCCharacter *)character
+{
+    STCCharacter *character = [[STCCharacter alloc]init];
+    character.characterHealth = 100;
+    
+    STCArmor *armor = [[STCArmor alloc]init];
+    armor.name = @"Cloak";
+    armor.healthNumber = 5;
+    character.armor = armor;
+    
+    STCWeapon *weapon = [[STCWeapon alloc]init];
+    weapon.name = @"Fists";
+    weapon.damageNumber = 10;
+    character.weapon = weapon;
+    
+    return character;
+}
+
 @end
