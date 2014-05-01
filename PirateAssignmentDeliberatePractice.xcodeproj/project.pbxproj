@@ -35,6 +35,8 @@
 		F8B29FA3191160FE0048EBC5 /* PirateTreasure.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F8B29F97191160FE0048EBC5 /* PirateTreasure.jpeg */; };
 		F8B29FA4191160FE0048EBC5 /* PirateTreasurer2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F8B29F98191160FE0048EBC5 /* PirateTreasurer2.jpeg */; };
 		F8B29FA5191160FE0048EBC5 /* PirateWeapons.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F8B29F99191160FE0048EBC5 /* PirateWeapons.jpeg */; };
+		F8B29FA9191223CE0048EBC5 /* STCWeapon.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B29FA8191223CE0048EBC5 /* STCWeapon.m */; };
+		F8B29FAC191223E10048EBC5 /* STCArmor.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B29FAB191223E10048EBC5 /* STCArmor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +85,10 @@
 		F8B29F97191160FE0048EBC5 /* PirateTreasure.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = PirateTreasure.jpeg; sourceTree = "<group>"; };
 		F8B29F98191160FE0048EBC5 /* PirateTreasurer2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = PirateTreasurer2.jpeg; sourceTree = "<group>"; };
 		F8B29F99191160FE0048EBC5 /* PirateWeapons.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = PirateWeapons.jpeg; sourceTree = "<group>"; };
+		F8B29FA7191223CE0048EBC5 /* STCWeapon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STCWeapon.h; sourceTree = "<group>"; };
+		F8B29FA8191223CE0048EBC5 /* STCWeapon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STCWeapon.m; sourceTree = "<group>"; };
+		F8B29FAA191223E10048EBC5 /* STCArmor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STCArmor.h; sourceTree = "<group>"; };
+		F8B29FAB191223E10048EBC5 /* STCArmor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STCArmor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,10 +153,7 @@
 				F8B29F6419114A4E0048EBC5 /* Main.storyboard */,
 				F8B29F6719114A4E0048EBC5 /* STCViewController.h */,
 				F8B29F6819114A4E0048EBC5 /* STCViewController.m */,
-				F8B29F8A191152310048EBC5 /* STCFactory.h */,
-				F8B29F8B191152310048EBC5 /* STCFactory.m */,
-				F8B29F87191151750048EBC5 /* STCTile.h */,
-				F8B29F88191151750048EBC5 /* STCTile.m */,
+				F8B29FA6191223B70048EBC5 /* Model */,
 				F8B29F6A19114A4E0048EBC5 /* Images.xcassets */,
 				F8B29F5919114A4E0048EBC5 /* Supporting Files */,
 			);
@@ -204,6 +207,21 @@
 				F8B29F99191160FE0048EBC5 /* PirateWeapons.jpeg */,
 			);
 			path = "PirateImageAssets-2";
+			sourceTree = "<group>";
+		};
+		F8B29FA6191223B70048EBC5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F8B29F8A191152310048EBC5 /* STCFactory.h */,
+				F8B29F8B191152310048EBC5 /* STCFactory.m */,
+				F8B29F87191151750048EBC5 /* STCTile.h */,
+				F8B29F88191151750048EBC5 /* STCTile.m */,
+				F8B29FA7191223CE0048EBC5 /* STCWeapon.h */,
+				F8B29FA8191223CE0048EBC5 /* STCWeapon.m */,
+				F8B29FAA191223E10048EBC5 /* STCArmor.h */,
+				F8B29FAB191223E10048EBC5 /* STCArmor.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,6 +338,8 @@
 				F8B29F8C191152310048EBC5 /* STCFactory.m in Sources */,
 				F8B29F5F19114A4E0048EBC5 /* main.m in Sources */,
 				F8B29F6919114A4E0048EBC5 /* STCViewController.m in Sources */,
+				F8B29FA9191223CE0048EBC5 /* STCWeapon.m in Sources */,
+				F8B29FAC191223E10048EBC5 /* STCArmor.m in Sources */,
 				F8B29F6319114A4E0048EBC5 /* STCAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
