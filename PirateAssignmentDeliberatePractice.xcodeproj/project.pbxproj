@@ -37,6 +37,7 @@
 		F8B29FA5191160FE0048EBC5 /* PirateWeapons.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F8B29F99191160FE0048EBC5 /* PirateWeapons.jpeg */; };
 		F8B29FA9191223CE0048EBC5 /* STCWeapon.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B29FA8191223CE0048EBC5 /* STCWeapon.m */; };
 		F8B29FAC191223E10048EBC5 /* STCArmor.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B29FAB191223E10048EBC5 /* STCArmor.m */; };
+		F8B29FAF191225B10048EBC5 /* STCCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B29FAE191225B10048EBC5 /* STCCharacter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,8 @@
 		F8B29FA8191223CE0048EBC5 /* STCWeapon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STCWeapon.m; sourceTree = "<group>"; };
 		F8B29FAA191223E10048EBC5 /* STCArmor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STCArmor.h; sourceTree = "<group>"; };
 		F8B29FAB191223E10048EBC5 /* STCArmor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STCArmor.m; sourceTree = "<group>"; };
+		F8B29FAD191225B10048EBC5 /* STCCharacter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STCCharacter.h; sourceTree = "<group>"; };
+		F8B29FAE191225B10048EBC5 /* STCCharacter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STCCharacter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,6 +219,8 @@
 				F8B29F8B191152310048EBC5 /* STCFactory.m */,
 				F8B29F87191151750048EBC5 /* STCTile.h */,
 				F8B29F88191151750048EBC5 /* STCTile.m */,
+				F8B29FAD191225B10048EBC5 /* STCCharacter.h */,
+				F8B29FAE191225B10048EBC5 /* STCCharacter.m */,
 				F8B29FA7191223CE0048EBC5 /* STCWeapon.h */,
 				F8B29FA8191223CE0048EBC5 /* STCWeapon.m */,
 				F8B29FAA191223E10048EBC5 /* STCArmor.h */,
@@ -334,6 +339,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8B29FAF191225B10048EBC5 /* STCCharacter.m in Sources */,
 				F8B29F89191151750048EBC5 /* STCTile.m in Sources */,
 				F8B29F8C191152310048EBC5 /* STCFactory.m in Sources */,
 				F8B29F5F19114A4E0048EBC5 /* main.m in Sources */,
