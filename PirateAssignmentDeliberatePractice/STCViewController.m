@@ -20,14 +20,13 @@
 	// Do any additional setup after loading the view, typically from a nib.
     STCFactory *factory = [[STCFactory alloc]init];
     self.tiles = [factory tiles];
-    NSLog(@"%@", self.tiles);
+
     
     self.character = [factory character];
-    NSLog(@"%@", self.character);
-    
+
+    self.boss = [factory boss];
     
     self.currentPoint = CGPointMake(0, 0);
-    NSLog(@"x is %f and y is %f", self.currentPoint.x, self.currentPoint.y);
     
     [self updateTile];
     [self updateDirectionButtons];
@@ -78,7 +77,22 @@
 - (IBAction)actionButtonPressed:(UIButton *)sender
 {
     STCTile *tile = [[self.tiles objectAtIndex:self.currentPoint.x]objectAtIndex:self.currentPoint.y];
+    if (tile.healthEffect == -50) {
+        self.boss.health = self.boss.health - self.character.damageLevel;
+    }
+    
     [self updateCharacterStatsForHealth:tile.healthEffect ForWeapon:tile.weapon ForArmor:tile.armor];
+    
+    if (self.boss.health == 0)
+    {
+        UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:@"Killed the boss" message:@"You win" delegate:nil cancelButtonTitle:@"Close" otherButtonTitles: nil];
+        [alertView show];
+    }
+    else if (self.character.characterHealth == 0)
+    {
+        UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:@"Pirate boss killed you" message:@"You loose" delegate:nil cancelButtonTitle:@"Close" otherButtonTitles: nil];
+        [alertView show];
+    }
     [self updateTile];
 }
 
@@ -108,6 +122,13 @@
     self.currentPoint = CGPointMake(self.currentPoint.x - 1, self.currentPoint.y);
     [self updateDirectionButtons];
     [self updateTile];
+}
+
+- (IBAction)restartButtonPressed:(UIButton *)sender
+{
+    self.character = nil;
+    self.boss = nil;
+    [self viewDidLoad];
 }
 
 - (BOOL)tileExistsAtPoint:(CGPoint)point

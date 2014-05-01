@@ -124,4 +124,11 @@
     return character;
 }
 
+- (STCBoss *)boss
+{
+    STCBoss *boss = [[STCBoss alloc]init];
+    boss.health = 65;
+    return boss;
+}
+
 @end

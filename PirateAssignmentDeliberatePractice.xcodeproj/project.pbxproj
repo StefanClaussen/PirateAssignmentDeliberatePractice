@@ -38,6 +38,7 @@
 		F8B29FA9191223CE0048EBC5 /* STCWeapon.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B29FA8191223CE0048EBC5 /* STCWeapon.m */; };
 		F8B29FAC191223E10048EBC5 /* STCArmor.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B29FAB191223E10048EBC5 /* STCArmor.m */; };
 		F8B29FAF191225B10048EBC5 /* STCCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B29FAE191225B10048EBC5 /* STCCharacter.m */; };
+		F8B29FB219124E400048EBC5 /* STCBoss.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B29FB119124E400048EBC5 /* STCBoss.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +93,8 @@
 		F8B29FAB191223E10048EBC5 /* STCArmor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STCArmor.m; sourceTree = "<group>"; };
 		F8B29FAD191225B10048EBC5 /* STCCharacter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STCCharacter.h; sourceTree = "<group>"; };
 		F8B29FAE191225B10048EBC5 /* STCCharacter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STCCharacter.m; sourceTree = "<group>"; };
+		F8B29FB019124E400048EBC5 /* STCBoss.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STCBoss.h; sourceTree = "<group>"; };
+		F8B29FB119124E400048EBC5 /* STCBoss.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STCBoss.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,6 +228,8 @@
 				F8B29FA8191223CE0048EBC5 /* STCWeapon.m */,
 				F8B29FAA191223E10048EBC5 /* STCArmor.h */,
 				F8B29FAB191223E10048EBC5 /* STCArmor.m */,
+				F8B29FB019124E400048EBC5 /* STCBoss.h */,
+				F8B29FB119124E400048EBC5 /* STCBoss.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -345,6 +350,7 @@
 				F8B29F5F19114A4E0048EBC5 /* main.m in Sources */,
 				F8B29F6919114A4E0048EBC5 /* STCViewController.m in Sources */,
 				F8B29FA9191223CE0048EBC5 /* STCWeapon.m in Sources */,
+				F8B29FB219124E400048EBC5 /* STCBoss.m in Sources */,
 				F8B29FAC191223E10048EBC5 /* STCArmor.m in Sources */,
 				F8B29F6319114A4E0048EBC5 /* STCAppDelegate.m in Sources */,
 			);

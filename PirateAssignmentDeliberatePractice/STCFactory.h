@@ -9,11 +9,14 @@
 #import <Foundation/Foundation.h>
 #import "STCTile.h"
 #import "STCCharacter.h"
+#import "STCBoss.h"
 
 @interface STCFactory : NSObject
 
 - (NSArray *)tiles;
 
 - (STCCharacter *)character;
+
+- (STCBoss *)boss;
 
 @end

@@ -10,4 +10,6 @@
 
 @interface STCBoss : NSObject
 
+@property (nonatomic)int health;
+
 @end

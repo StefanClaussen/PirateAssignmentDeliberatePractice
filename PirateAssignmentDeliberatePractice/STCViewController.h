@@ -13,6 +13,7 @@
 
 @property (strong, nonatomic) NSArray *tiles;
 @property (strong, nonatomic) STCCharacter *character;
+@property (strong, nonatomic) STCBoss *boss;
 @property (nonatomic)CGPoint currentPoint;
 
 @property (strong, nonatomic) IBOutlet UIImageView *backgroundImageView;
@@ -32,5 +33,6 @@
 - (IBAction)eastButtonPressed:(UIButton *)sender;
 - (IBAction)southButtonPressed:(UIButton *)sender;
 - (IBAction)westButtonPressed:(UIButton *)sender;
+- (IBAction)restartButtonPressed:(UIButton *)sender;
 
 @end
